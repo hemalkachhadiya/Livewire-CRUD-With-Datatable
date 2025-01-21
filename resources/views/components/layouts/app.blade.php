@@ -118,12 +118,7 @@
     @if(!request()->is('/'))
     <div class="sidebar">
         <a wire:navigate href="/todos" class="{{ request()->is('/todos') ? 'active' : '' }}">Home</a>
-        <a wire:navigate href="{{ Route('counter') }}" class="{{ request()->is('counter') ? 'active' : '' }}">Counter</a>
-        <a wire:navigate href="/password" class="{{ request()->is('password') ? 'active' : '' }}">Password Checker</a>
         <a wire:navigate href="/create_post" class="{{ request()->is('create_post') ? 'active' : '' }}">Create Post</a>
-        <a wire:navigate href="{{ Route('show_post') }}" class="{{ request()->is('show_post') ? 'active' : '' }}">Show Post (Normal) </a>
-        <a wire:navigate href="/openModel" class="{{ request()->is('openModel') ? 'active' : '' }}">Open Model</a>
-        <a wire:navigate href="/ChatApp" class="{{ request()->is('ChatApp') ? 'active' : '' }}">Chat Bot</a>
         <a wire:navigate href="/Pgdatatable" class="{{ request()->is('Pgdatatable') ? 'active' : '' }}">Show Post (Pg Data Table)</a>
     </div>
     @endif
